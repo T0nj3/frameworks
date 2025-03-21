@@ -1,70 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feed</title>
-  <link rel="stylesheet" href="../css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-</head>
-<body class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen text-white"
+  >
+    <main class="max-w-4xl mx-auto p-6 space-y-10">
+      <header class="text-center space-y-2">
+        <h1 class="text-4xl font-extrabold drop-shadow">Social Feed</h1>
+        <p class="text-white/80">See what others are sharing!</p>
+      </header>
 
-  <main class="max-w-4xl mx-auto p-6 space-y-10">
+      <div
+        class="backdrop-blur-md bg-white/10 border border-white/30 p-4 rounded-2xl shadow-md flex flex-col sm:flex-row gap-4 items-center justify-between"
+      >
+        <input
+          type="text"
+          placeholder="Search posts..."
+          class="w-full sm:w-1/2 p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+        />
+        <select
+          class="p-3 rounded bg-white/20 text-white border border-white/30 focus:outline-none"
+        >
+          <option>Latest</option>
+          <option>Most Popular</option>
+        </select>
+      </div>
 
-    
-    <header class="text-center space-y-2">
-      <h1 class="text-4xl font-extrabold drop-shadow">Social Feed</h1>
-      <p class="text-white/80">See what others are sharing!</p>
-    </header>
+      <form
+        class="backdrop-blur-md bg-white/10 border border-white/30 p-6 rounded-3xl shadow-md space-y-4"
+      >
+        <h2 class="text-2xl font-semibold drop-shadow">Create a Post</h2>
+        <input
+          type="text"
+          placeholder="Post Title"
+          required
+          class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+        />
+        <textarea
+          placeholder="What's on your mind?"
+          rows="3"
+          required
+          class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-full font-semibold shadow-md"
+        >
+          Post It
+        </button>
+      </form>
 
-    <div class="backdrop-blur-md bg-white/10 border border-white/30 p-4 rounded-2xl shadow-md flex flex-col sm:flex-row gap-4 items-center justify-between">
-      <input type="text" placeholder="Search posts..." class="w-full sm:w-1/2 p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50">
-      <select class="p-3 rounded bg-white/20 text-white border border-white/30 focus:outline-none">
-        <option>Latest</option>
-        <option>Most Popular</option>
-      </select>
-    </div>
+      <section class="space-y-6">
+        <article
+          class="flex gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md"
+        >
+          <img
+            src="https://via.placeholder.com/80"
+            alt="Thumbnail"
+            class="w-20 h-20 object-cover rounded-xl"
+          />
+          <div>
+            <h3 class="text-xl font-bold mb-1">Colorful Vibes</h3>
+            <p class="text-white/90">Just loving this gradient vibe!</p>
+          </div>
+        </article>
 
-
-    <form class="backdrop-blur-md bg-white/10 border border-white/30 p-6 rounded-3xl shadow-md space-y-4">
-      <h2 class="text-2xl font-semibold drop-shadow">Create a Post</h2>
-      <input 
-        type="text" 
-        placeholder="Post Title" 
-        required 
-        class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
-      />
-      <textarea 
-        placeholder="What's on your mind?" 
-        rows="3" 
-        required
-        class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
-      ></textarea>
-      <button type="submit" class="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-full font-semibold shadow-md">
-        Post It
-      </button>
-    </form>
-
-    
-    <section class="space-y-6">
-      <article class="flex gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
-        <img src="https://via.placeholder.com/80" alt="Thumbnail" class="w-20 h-20 object-cover rounded-xl" />
-        <div>
-          <h3 class="text-xl font-bold mb-1">Colorful Vibes</h3>
-          <p class="text-white/90">Just loving this gradient vibe!</p>
-        </div>
-      </article>
-
-      <article class="flex gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
-        <img src="https://via.placeholder.com/80" alt="Thumbnail" class="w-20 h-20 object-cover rounded-xl" />
-        <div>
-          <h3 class="text-xl font-bold mb-1">My Thoughts</h3>
-          <p class="text-white/90">Here's something I've been thinking about lately...</p>
-        </div>
-      </article>
-    </section>
-
-  </main>
-
-</body>
+        <article
+          class="flex gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md"
+        >
+          <img
+            src="https://via.placeholder.com/80"
+            alt="Thumbnail"
+            class="w-20 h-20 object-cover rounded-xl"
+          />
+          <div>
+            <h3 class="text-xl font-bold mb-1">My Thoughts</h3>
+            <p class="text-white/90">
+              Here's something I've been thinking about lately...
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
