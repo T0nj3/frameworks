@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feed</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"rel="stylesheet"/>
   </head>
-  <body
-    class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen text-white"
-  >
-    <main class="max-w-4xl mx-auto p-6 space-y-10">
+  <body class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen text-white">
+    <nav class="w-full flex justify-between items-center px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/20 fixed top-0 z-50">
+      <h1 class="text-xl font-bold">Profile</h1>
+      <div class="flex items-center gap-4">
+        <a href="../feed/index.html" class="text-sm hover:underline">Feed</a>
+        <a href="../index.html" class="text-sm font-semibold hover:text-red-300 transition">Log out</a>
+        <a href="../profile/index.html">
+          <img src="https://i.pravatar.cc/40?img=24" alt="Profile"
+            class="w-10 h-10 rounded-full border-2 border-white hover:ring-2 ring-white transition" />
+        </a>
+      </div>
+    </nav>
+  
+    <main class="max-w-3xl mx-auto pt-32 px-6 space-y-10">
       <header class="text-center space-y-2">
         <h1 class="text-4xl font-extrabold drop-shadow">Social Feed</h1>
         <p class="text-white/80">See what others are sharing!</p>
       </header>
+
 
       <div
         class="backdrop-blur-md bg-white/10 border border-white/30 p-4 rounded-2xl shadow-md flex flex-col sm:flex-row gap-4 items-center justify-between"
@@ -67,8 +75,7 @@
           <img
             src="https://via.placeholder.com/80"
             alt="Thumbnail"
-            class="w-20 h-20 object-cover rounded-xl"
-          />
+            class="w-20 h-20 object-cover rounded-xl"/>
           <div>
             <h3 class="text-xl font-bold mb-1">Colorful Vibes</h3>
             <p class="text-white/90">Just loving this gradient vibe!</p>
