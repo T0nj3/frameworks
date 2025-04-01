@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    
+    .btn {
+        @apply font-semibold px-6 py-3 rounded-full backdrop-blur transition shadow-md;
+    }
+
+    .btn-primary {
+        @apply bg-white/20 text-white hover:bg-white/30;
+    }
+
+    .btn-secondary {
+        @apply bg-white/20 text-white hover:bg-white/30;
+    }
+
+    .btn-login {
+        @apply bg-pink-500 text-white hover:bg-pink-600;
+    }
+
+    .btn-register {
+        @apply bg-purple-600 text-white hover:bg-purple-700;
+    }
+
+    .btn-disabled {
+        @apply bg-gray-400 text-gray-700 cursor-not-allowed;
+    }
+}
