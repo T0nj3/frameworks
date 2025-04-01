@@ -14,7 +14,7 @@
   <body class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 min-h-screen text-white">
 
 
-    <nav class="w-full flex justify-between items-center px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/20 fixed top-0 z-50">
+    <header class="w-full flex justify-between items-center px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/20 fixed top-0 z-50">
       <h1 class="text-xl font-bold">Profile</h1>
       <div class="flex items-center gap-4">
         <a href="../feed/index.html" class="text-sm hover:underline">Feed</a>
@@ -24,13 +24,13 @@
             class="w-10 h-10 rounded-full border-2 border-white hover:ring-2 ring-white transition" />
         </a>
       </div>
-    </nav>
+    </header>
   
  
     <main class="max-w-3xl mx-auto pt-32 px-6 space-y-10">
       
   
-      <section class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+      <section class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-16 p-5">
         <img src="https://i.pravatar.cc/120?img=24" alt="Profile Large"
           class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover" />
         
@@ -47,7 +47,7 @@
         </div>
       </section>
   
-      <section>
+       <section class="mb-16 p-5">
         <h3 class="text-xl font-semibold mb-4">Your Posts</h3>
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
           <div class="aspect-square bg-white/10 border border-white/20 rounded-xl shadow-md flex items-center justify-center text-white/70">📷 Post 1</div>
@@ -58,7 +58,9 @@
           <div class="aspect-square bg-white/10 border border-white/20 rounded-xl shadow-md flex items-center justify-center text-white/70">📷 Post 6</div>
         </div>
       </section>
-  
     </main>
+    <footer class="w-full h-32 flex items-center justify-center bg-white/10 border-t border-white/30 text-white/70 text-sm">
+      &copy; 2025 SocialApp. Built with HTML and Tailwind.
+    </footer>
   </body>
 </html>
