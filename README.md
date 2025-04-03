@@ -9,9 +9,7 @@ This is a project where I used **Tailwind CSS** to build a responsive social med
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Development Scripts](#development-scripts)
-- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
-- [License](#license)
 
 ## Project Description
 
