@@ -35,7 +35,7 @@ The design is responsive, adapting to different screen sizes using Tailwind’s 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/css-frameworks.git
+   git clone https://github.com/T0nj3/css-frameworks.git
    cd css-frameworks
 
 2. 	Install Tailwind CSS:
