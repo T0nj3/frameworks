@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore posts shared by others on Social App's feed. Connect, like, and comment on your favorite posts." />
+    <title>Feed</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon_io/favicon.ico"/>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body class="font-sans bg-gradient-to-br from-purple-500 via-pink-500 to-yellow-400 text-white flex flex-col min-h-screen">
+    
+    <header class="w-full flex justify-between items-center px-6 py-4 bg-white/10 backdrop-blur-md border-b border-white/20 fixed top-0 z-50">
+      <h1 class="text-xl font-bold">Feed</h1>
+      <div class="flex items-center gap-4">
+        <a href="../feed/index.html" class="text-sm hover:underline">Feed</a>
+        <a href="../index.html" class="text-sm font-semibold hover:text-red-300 transition">Log out</a>
+        <a href="../profile/index.html">
+          <img src="https://i.pravatar.cc/40?img=24" alt="Profile" class="w-10 h-10 rounded-full border-2 border-white hover:ring-2 ring-white transition" />
+        </a>
+      </div>
+    </header>
+  
+    <main class="flex-1 max-w-3xl mx-auto pt-32 px-6 space-y-10">
+      <div class="backdrop-blur-md bg-white/10 border border-white/30 p-4 rounded-2xl shadow-md flex flex-col sm:flex-row gap-4 items-center justify-between">
+        <input type="text" placeholder="Search posts..." class="w-full sm:w-1/2 p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50" />
+        <select class="p-3 rounded bg-white/20 text-white border border-white/30 focus:outline-none">
+          <option>Latest</option>
+          <option>Most Popular</option>
+        </select>
+      </div>
+  
+      <div class="flex justify-end">
+        <button id="togglePostFormBtn" class="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-full font-semibold shadow-md">+ New Post</button>
+      </div>
+
+      <form id="postForm" class="hidden relative backdrop-blur-md bg-white/10 border border-white/30 p-6 rounded-3xl shadow-md space-y-4">
+        <button type="button" id="closePostFormBtn" class="absolute top-4 right-4 text-white/70 hover:text-white text-lg" aria-label="Close">&times;</button>
+        <h2 class="text-2xl font-semibold drop-shadow">Create a Post</h2>
+        <input type="text" placeholder="Post Title" required class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50" />
+        <textarea placeholder="What's on your mind?" rows="3" required class="w-full p-3 rounded bg-white/20 placeholder-white/80 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"></textarea>
+        <button type="submit" class="bg-pink-500 hover:bg-pink-600 transition px-6 py-3 rounded-full font-semibold shadow-md">Post It</button>
+      </form>
+  
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-5">
+        <article class="flex flex-col gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1463438690606-f6778b8c1d10?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="w-full h-48 object-cover rounded-xl" />
+          <div>
+            <h3 class="text-xl font-bold mb-1">Colorful Vibes</h3>
+            <p class="text-white/90">Just loving this gradient vibe!</p>
+          </div>
+        </article>
+  
+        <article class="flex flex-col gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
+          <img src="https://plus.unsplash.com/premium_photo-1675870395052-67206ea2597e?q=80&w=3135&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="w-full h-48 object-cover rounded-xl" />
+          <div>
+            <h3 class="text-xl font-bold mb-1">My Thoughts</h3>
+            <p class="text-white/90">Here's something I've been thinking about lately...</p>
+          </div>
+        </article>
+  
+        <article class="flex flex-col gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1495395226200-8fbf6b720b8c?q=80&w=3097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="w-full h-48 object-cover rounded-xl" />
+          <div>
+            <h3 class="text-xl font-bold mb-1">Nature Walk</h3>
+            <p class="text-white/90">The air is crisp and the views are amazing 🌿</p>
+          </div>
+        </article>
+  
+        <article class="flex flex-col gap-4 items-start backdrop-blur-md bg-white/10 border border-white/20 p-5 rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1628556820645-63ba5f90e6a2?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="w-full h-48 object-cover rounded-xl" />
+          <div>
+            <h3 class="text-xl font-bold mb-1">Sunday Brunch</h3>
+            <p class="text-white/90">Avocado toast never looked better 🥑🍳</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  
+    <footer class="w-full h-32 flex items-center justify-center bg-white/10 border-t border-white/30 text-white/70 text-sm">
+      &copy; 2025 SocialApp. Built with HTML and Tailwind.
+    </footer>
+  
+    <script src="../js/feed.js"></script>
+  </body>
+</html>
