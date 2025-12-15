@@ -2,6 +2,9 @@
 
 This is a project where I used **Tailwind CSS** to build a responsive social media application with a focus on a mobile-first approach. The application includes authentication, a feed page to display posts, and a profile page where users can view and edit their information.
 
+## Improvement:
+I improved the layout by increasing the maximum width of the main content container.
+
 ## Table of Contents
 - [Project Description](#project-description)
 - [Features](#features)
